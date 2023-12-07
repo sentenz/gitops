@@ -1,0 +1,7 @@
+---
+- name: Run software analysis roles
+  hosts: all
+  roles:
+    - linter
+    # - sanitizer
+    # - scanner

@@ -1,0 +1,6 @@
+---
+- name: Setup software environment
+  hosts: all
+  become: yes
+  roles:
+    - common

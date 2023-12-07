@@ -1,0 +1,4 @@
+# https://ansible-lint.readthedocs.io/configuring/#ignoring-rules-for-entire-files
+
+playbook.yml package-latest # disable package-latest rule for playbook.yml
+playbook.yml deprecated-module

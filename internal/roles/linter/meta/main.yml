@@ -1,0 +1,17 @@
+---
+dependencies:
+  - role: common
+
+galaxy_info:
+  author: Sentenz
+  description: A role to perform code linting
+  company: Sentenz
+  license: MIT
+  min_ansible_version: "2.6"
+  platforms:
+  - name: Ubuntu
+    versions:
+    - focal
+    - jammy
+  galaxy_tags:
+    - linter

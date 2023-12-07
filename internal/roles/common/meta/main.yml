@@ -1,0 +1,16 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: Sentenz
+  description: A role that applies to all hosts
+  company: Sentenz
+  license: MIT
+  min_ansible_version: "2.6"
+  platforms:
+  - name: Ubuntu
+    versions:
+    - focal
+    - jammy
+  galaxy_tags:
+    - common

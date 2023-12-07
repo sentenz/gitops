@@ -1,0 +1,26 @@
+---
+- name: Update system packages
+  apt:
+    update_cache: yes
+    upgrade: yes
+
+- name: Install basic utilities
+  apt:
+    name:
+      - curl
+      - wget
+      - vim
+      - git
+    state: present
+
+- name: Set the hostname
+  hostname:
+    name: "{{ inventory_hostname }}"
+
+- name: Create a user
+  user:
+    name: dev
+    password: "{{ dev_password | password_hash('sha512') }}"
+    shell: /bin/bash
+    groups: sudo
+    append: yes

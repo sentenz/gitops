@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "redhat.ansible",
+        "vivaxy.vscode-conventional-commits",
+        "ms-vscode-remote.remote-containers",
+        "eamodio.gitlens"
+    ]
+}

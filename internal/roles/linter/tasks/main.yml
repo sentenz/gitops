@@ -1,0 +1,13 @@
+---
+# This is the tasks file for role1
+
+- name: Ensure package is installed
+  apt:
+    name: package-name
+    state: present
+
+- name: Ensure service is running
+  service:
+    name: service-name
+    state: started
+    enabled: yes

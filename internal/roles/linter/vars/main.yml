@@ -1,0 +1,7 @@
+---
+linter_rc_files:
+  - "{{ role_path }}/files/.pylintrc"
+  - "{{ role_path }}/files/.flake8"
+  - "{{ role_path }}/files/.yamllint"
+  - "{{ role_path }}/files/.ansible-lint"
+  - "{{ role_path }}/files/.ansible-lint-ignore"

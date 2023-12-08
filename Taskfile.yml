@@ -1,0 +1,25 @@
+version: "3"
+
+tasks:
+  default:
+    desc: Print task list.
+    cmds:
+      - task -a
+    silent: true
+
+  setup:
+    desc: Run the initial environment setup.
+    cmds:
+      - cd scripts && chmod 755 setup.sh && sudo ./setup.sh
+
+  setup-environment:
+    desc: Run the Ansible playbook to setup the host environment.
+    deps:
+      - task: setup
+    cmds:
+      - cd internal && ansible-playbook -i inventory/inventory.ini playbooks/setup-environment.yml
+
+  run-analysis:
+    desc: Run the Ansible playbook to analyse staged git files.
+    cmds:
+      - cd internal && ansible-playbook -i inventory/inventory.ini playbooks/perform-analysis.yml

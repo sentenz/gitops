@@ -20,11 +20,12 @@
     }
   },
   "runArgs": [
-    "--name", "dev-gitops",
-    "-v", "dev-gitops-data:/app/data"
+    "--name",
+    "dev-app",
+    "-v",
+    "dev-data:/app/data"
   ],
   "forwardPorts": [],
-  "onCreateCommand": "",
-  "postCreateCommand": "task setup",
+  "postAttachCommand": "cd scripts && chmod 755 setup.sh && sudo ./setup.sh",
   "remoteUser": "vscode"
 }

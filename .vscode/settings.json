@@ -1,6 +1,48 @@
 {
+    "window.title": "${rootName}",
+    "files.encoding": "utf8",
+    "files.eol": "\n",
     "files.associations": {
         "*plays.yml": "ansible",
         "*init.yml": "yaml"
-    }
+    },
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": true,
+    "editor.suggest.showFolders": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.tabSize": 2,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "editor.renderWhitespace": "all",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": true,
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "vscode.markdown-language-features"
+    },
+    "[shell]": {
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": true,
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": null
+    },
+    "[json]": {
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[yaml]": {
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": true,
+        "editor.defaultFormatter": null
+    },
+    "ansible.python.interpreterPath": "/bin/python3"
 }

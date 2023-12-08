@@ -1,14 +1,18 @@
 {
   "name": "C++",
   "image": "mcr.microsoft.com/vscode/devcontainers/cpp:ubuntu-22.04",
-	"features": {
-		"ghcr.io/devcontainers/features/git:1": {
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {
       "version": "latest",
       "ppa": "false"
     }
   },
-  "capAdd": ["SYS_PTRACE"],
-	"securityOpt": ["seccomp=unconfined"],
+  "capAdd": [
+    "SYS_PTRACE"
+  ],
+  "securityOpt": [
+    "seccomp=unconfined"
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
@@ -20,8 +24,10 @@
     }
   },
   "runArgs": [
-    "--name", "dev-app",
-    "-v", "dev-data:/app/data"
+    "--name",
+    "dev-app",
+    "-v",
+    "dev-data:/app/data"
   ],
   "forwardPorts": [],
   "onCreateCommand": "",
